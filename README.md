@@ -19,6 +19,13 @@ brew install --cask app4-studio    # Studio desktop app + the `app4` command (ma
 brew install app4-cli              # the `app4` command only (macOS and Linux)
 ```
 
+**npm**:
+
+```sh
+npx @app4/cli --version            # run without installing
+npm install -g @app4/cli           # or install the `app4` command globally
+```
+
 **Shell script** (no package manager required):
 
 ```sh
