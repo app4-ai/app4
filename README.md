@@ -19,11 +19,11 @@ brew install --cask app4-studio    # Studio desktop app + the `app4` command (ma
 brew install app4-cli              # the `app4` command only (macOS and Linux)
 ```
 
-**npm**:
+**npm** (private to the `app4` organization until launch):
 
 ```sh
-npx @app4/cli --version            # run without installing
-npm install -g @app4/cli           # or install the `app4` command globally
+npm install -g @app4/cli             # install the `app4` command globally
+npx -p @app4/cli app4 --version      # or run it once without installing
 ```
 
 **Shell script** (no package manager required):
