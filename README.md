@@ -11,11 +11,12 @@ lives at [app4.dev](https://app4.dev).
 
 ## Install
 
-**Homebrew** (macOS and Linux):
+**Homebrew** (macOS and Linux; Homebrew 6 asks you to trust a third-party tap once):
 
 ```sh
-brew install app4-ai/tap/app4-cli              # the `app4` command
-brew install --cask app4-ai/tap/app4-studio    # Studio desktop app + CLI
+brew tap app4-ai/tap && brew trust app4-ai/tap
+brew install --cask app4-studio    # Studio desktop app + the `app4` command (macOS)
+brew install app4-cli              # the `app4` command only (macOS and Linux)
 ```
 
 **Shell script** (no package manager required):
@@ -30,15 +31,13 @@ The script installs the `app4` command into `~/.app4/bin`. Verify with:
 app4 --version
 ```
 
-The first public release through these channels is being prepared.
-
 ## Repositories
 
 | Repository | Purpose |
 |------------|---------|
 | [homebrew-tap](https://github.com/app4-ai/homebrew-tap) | Homebrew formulae and casks |
-| app4-cli | The `app4` command |
-| app4-studio | App4 Studio desktop application |
+| app4-cli | The `app4` command (source moves here at launch) |
+| app4-studio | App4 Studio desktop application (source moves here at launch) |
 
 ## License
 
